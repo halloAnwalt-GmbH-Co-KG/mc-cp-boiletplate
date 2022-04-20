@@ -53,10 +53,13 @@ export default function doubleOptIn() {
 
         const successAnimation = document.getElementById('success');
         const failureAnimation = document.getElementById('failure');
+        const loadingAnimation = document.getElementById('loading');
 
         if (data.statusCode == '200') {
+            loadingAnimation.classList.add("hidden");
             successAnimation.classList.remove("hidden");
-        } else {
+          } else {
+            loadingAnimation.classList.add("hidden");
             failureAnimation.classList.remove("hidden");
         }
 

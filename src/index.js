@@ -2,6 +2,7 @@ import _ from 'lodash';
 // import './style.css';
 // import 'bootstrap';
 import './scss/main.scss';
+import './styles/loader.css';
 import './styles/icon-animations.css';
 
 

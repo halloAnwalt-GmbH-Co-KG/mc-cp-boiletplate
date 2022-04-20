@@ -4,14 +4,40 @@
 
     <div class="col-12">
 
+      <div id="loading" class="w-100 d-block">
+        <div class="loader d-flex">
+          <div class="duo duo1">
+            <div class="dot dot-a"></div>
+            <div class="dot dot-b"></div>
+          </div>
+          <div class="duo duo2">
+            <div class="dot dot-a"></div>
+            <div class="dot dot-b"></div>
+          </div>
+        </div>
+
+        <div class="col-12 text-center">
+          <h1 class="fw-bold">Lädt...</h1>
+          <h3>Bitte haben Sie einen Moment Gedult.</h3>
+        </div>
+
+      </div>
+
       {{!-- SUCCESS --}}
-      <div id="success" class="hidden swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
-        <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
-        <span class="swal2-success-line-tip"></span>
-        <span class="swal2-success-line-long"></span>
-        <div class="swal2-success-ring"></div>
-        <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
-        <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+      <div id="success" class="hidden">
+        <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
+          <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+          <span class="swal2-success-line-tip"></span>
+          <span class="swal2-success-line-long"></span>
+          <div class="swal2-success-ring"></div>
+          <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+          <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+        </div>
+
+        <div class="col-12 text-center">
+          <h1 class="fw-bold">Well done!</h1>
+          <h3>Sie haben irgendwas richtig gemacht!</h3>
+        </div>
       </div>
 
       {{!-- <div class="o-circle c-container__circle o-circle__sign--success">
@@ -19,11 +45,18 @@
       </div> --}}
 
       {{!-- FAILURE --}}
-      <div  id="failure" class="hidden swal2-icon swal2-error swal2-animate-error-icon" style="display: flex;">
-        <span class="swal2-x-mark">
-          <span class="swal2-x-mark-line-left"></span>
-          <span class="swal2-x-mark-line-right"></span>
-        </span>
+      <div id="failure" class="hidden">
+        <div class="swal2-icon swal2-error swal2-animate-error-icon" style="display: flex;">
+          <span class="swal2-x-mark">
+            <span class="swal2-x-mark-line-left"></span>
+            <span class="swal2-x-mark-line-right"></span>
+          </span>
+        </div>
+
+        <div class="col-12 text-center">
+          <h1 class="fw-bold">Ups...</h1>
+          <h3>Irgendwas ist ganz schön schiefgelaufen.</h3>
+        </div>
       </div>
 
       {{!-- <div class="o-circle c-container__circle o-circle__sign--failure">
@@ -32,10 +65,10 @@
 
     </div>
 
-    <div class="col-12 text-center">
+    {{!-- <div class="col-12 text-center">
       <h1 class="fw-bold">Well done!</h1>
       <h3>Sie haben irgendwas richtig gemacht!</h3>
-    </div>
+    </div> --}}
 
   </div>
 
