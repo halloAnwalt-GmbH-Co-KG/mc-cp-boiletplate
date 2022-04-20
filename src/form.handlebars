@@ -1,0 +1,234 @@
+<div class="container d-flex justify-content-center p-5">
+
+<form id="regForm" class="w-auto" action="">
+
+  <h1>Beauftragung: PKV-Beitragsrückerstattung</h1>
+
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">
+    <div class="row mb-3 mt-5">
+      <div class="col-auto">
+        <label>Anrede</label>
+        <select name="salutation" class="form-select">
+          <option value=""></option>
+          <option value="Frau">Frau</option>
+          <option value="Herr">Herr</option>
+          <option value="keineAngabe">keine Angabe</option>
+        </select>
+      </div>
+      <div class="col-auto">
+        <label>Titel</label>
+        <select name="title" class="form-select">
+          <option value=""></option>
+          <option value="Dr">Dr.</option>
+          <option value="Prof">Prof.</option>
+          <option value="ProfDr">Prof. Dr.</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-lg-6 col-sm-12">
+        <label>Name</label>
+        <input placeholder="Vorname" class="form-control" />
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <label></label>
+        <input placeholder="Nachname" class="form-control" />
+      </div>
+    </div>
+    <div class="mb-3 col-lg-6 col-sm-12">Geburtsdatum
+      <input type="date" placeholder="tt.mm.jjjj" class="form-control" />
+    </div>
+    <div class="mb-3">Anschrift
+      <input placeholder="Straße und Hausnummer" class="form-control" /></div>
+    <div class="mb-3">
+      <input placeholder="Adresszusatz" class="form-control" /></div>
+    <div class="row mb-3">
+      <div class="col-sm-3 col-4">
+        <label>PLZ</label>
+        <input placeholder="PLZ" class="form-control" />
+      </div>
+      <div class="col-sm-9 col-8">
+        <label>Ort</label>
+        <input placeholder="Ort" class="form-control" />
+      </div>
+    </div>
+    <div class="mb-3">Telefon
+      <input placeholder="Telefon" class="form-control" /></div>
+    <div class="mb-3">E-Mail-Adresse
+      <input type="email" placeholder="E-Mail" class="form-control" /></div>
+  </div>
+
+  <div class="tab">Angaben zu Ihrer Privaten Krankenversicherung
+    <div class="mb-3">Name Ihrer Krankenversicherung
+      <input name="KVName" class="form-control" />
+    </div>
+    <div class="mb-3">Versicherungsnummer bei Ihrer Krankenversicherung
+      <input name="KVNr" class="form-control" />
+    </div>
+    <div class="mb-3">Mitversicherte Personen
+      <input name="MitversichertePersonen" class="form-control" />
+    </div>
+    <div class="mb-3">Datum des Versicherungsabschlusses
+      <input type="date" name="DatumKVAbschluss" class="form-control" />
+      <div class="form-text">Diese Angabe finden Sie auf Ihrem
+        Versicherungsschein. Sollten Sie das genaue Datum nicht kennen, tragen
+        Sie bitte den 01.01. des Jahres des Versicherungsabschlusses ein.</div>
+    </div>
+    <div class="col-auto">
+      <label>Status Ihrer Krankenversicherung</label>
+      <select name="KVStatus" class="form-select">
+        <option value=""></option>
+        <option value="KVrunning">Läuft noch</option>
+        <option value="KVchanged">Versicherungswechsel hat stattgefunden</option>
+      </select>
+    </div>
+    <div class="mb-3">Datum Versicherungswechsel
+      <input type="date" class="form-control" />
+    </div>
+  </div>
+
+  <div class="tab">Angaben zu Ihrer Rechtsschutzversicherung
+    <div class="mb-3">Name Ihrer Rechtsschutzversicherung
+      <input name="KVName" class="form-control" />
+    </div>
+    <div class="mb-3">Versicherungsnehmer (falls abweichend)
+      <input name="KVNr" class="form-control" />
+    </div>
+    <div class="mb-3">Versicherungsnummer Ihrer Rechtsschutzversicherung
+      <input name="MitversichertePersonen" class="form-control" />
+    </div>
+    <div class="mb-3">Wann haben Sie Ihre Rechtsschutzversicherung genau
+      abgeschlossen?
+      <input type="date" name="DatumKVAbschluss" class="form-control" />
+      <div class="form-text">Diese Angabe finden Sie auf Ihrem
+        Versicherungsschein. Sollten Sie das genaue Datum nicht kennen, tragen
+        Sie bitte den 01.01. des Jahres des Versicherungsabschlusses ein.</div>
+    </div>
+    <div class="col-auto">
+      <label>Bestand vorher eine weitere Rechtsschutzversicherung?</label>
+      <select name="KVStatus" class="form-select">
+        <option value=""></option>
+        <option value="KVrunning">Ja</option>
+        <option value="KVchanged">Nein</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="tab">Angaben zur 2. (früheren) Rechtsschutzversicherung
+    <div class="mb-3">War der Übergang der beiden Rechtsschutzversicherungen
+      lückenlos?
+      <select name="KVStatus" class="form-select">
+        <option value=""></option>
+        <option value="KVrunning">Ja</option>
+        <option value="KVchanged">Nein</option>
+      </select>
+    </div>
+    <div class="mb-3">2. Rechtsschutzversicherung
+      <input name="KVNr" class="form-control" />
+    </div>
+    <div class="mb-3">2. Versicherungsnehmer (falls abweichend)
+      <input name="MitversichertePersonen" class="form-control" />
+    </div>
+    <div class="mb-3">2. Versicherungsnummer Ihrer Rechtsschutzversicherung
+      <input name="MitversichertePersonen" class="form-control" />
+    </div>
+    <div class="mb-3">2. Wann haben Sie Ihre Rechtsschutzversicherung genau
+      abgeschlossen?
+      <input type="date" name="DatumKVAbschluss" class="form-control" />
+      <div class="form-text">Diese Angabe finden Sie auf Ihrem
+        Versicherungsschein. Sollten Sie das genaue Datum nicht kennen, tragen
+        Sie bitte den 01.01. des Jahres des Versicherungsabschlusses ein.</div>
+    </div>
+  </div>
+
+  <div class="tab">
+    <button
+      class="btn btn-primary"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseExample"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+    >
+      Button with data-bs-target
+    </button>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        HalloAnwalt.de dient ausschließlich als technische Plattform zur
+        elektronischen Mandatsgenerierung für die zu beauftragende
+        Partner-Kanzlei (Auftragnehmer). Es wird ausschließlich der oben
+        genannte Auftragnehmer beauftragt. Eine Beauftragung der HalloAnwalt
+        GmbH, der HalloServices GmbH und der HalloGroup GmbH findet nicht statt.
+        Die Haftung der HalloAnwalt GmbH, der HalloServices GmbH und der
+        HalloGroup GmbH ist ausdrücklich ausgeschlossen.
+      </div>
+    </div>
+    <button
+      class="btn btn-primary"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseExample2"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+    >
+      Button with data-bs-target
+    </button>
+    <div class="collapse" id="collapseExample2">
+      <div class="card card-body">
+        Der GHENDLER RUVINSKIJ Rechtsanwaltsgesellschaft mbH*, Bachemstraße 8,
+        50676 Köln (die Gesellschaft ist im Handelsregister B des Amtsgerichts
+        Köln unter HRB 101611 eingetragen und wird vertreten durch ihre
+        Geschäftsführer Dr. Veaceslav Ghendler und Ilja Ruvinskij), wird sowohl
+        Vollmacht zur außergerichtlichen Vertretung in allen zivil-,
+        verwaltungs- und sozialrechtlichen Angelegenheiten als auch
+        Prozessvollmacht für alle Verfahren in diesem Zusammenhang in allen
+        Instanzen erteilt. Diese Vollmacht erstreckt sich insbesondere auf
+        folgende Befugnisse: 1. Vertretung in zivil- sowie
+        verwaltungsrechtlichen Verfahren einschließlich der Verfahren im
+        vorläufigen Rechtsschutz 2. Beilegung des Rechtsstreits durch Vergleich,
+        sonstige Einigung, Verzicht oder Anerkenntnis 3. Vertretung bei
+        alternativen Streitbeilegungsverfahren, insb. Verfahren vor staatlich
+        anerkannten Schlichtungsstellen (z.B. Ombudsmann) 4. Entgegennahme und
+        Bewirken von Zustellungen und sonstigen Mitteilungen 5. Anforderung von
+        Auskünften, Vertragsunterlagen und sonstigen personen- oder
+        vertragsbezogenen Daten unserer Mandantschaft bei Versicherungen, Banken
+        und sonstigen diese Daten speichernden und verarbeitenden Stellen, wobei
+        ich den Auskunftspflichtigen hiermit von der Schweigepflicht entbinde 6.
+        Erstattung von Strafanzeigen 7. Erteilung von Untervollmachten 8.
+        Entgegennahme von Zahlungen (Fremdgelder, Gerichtskosten etc.) Unsere
+        anwaltliche Haftung für einfache Fahrlässigkeit ist auf die Summe von
+        10.000.000,– Euro (Zehn Millionen) begrenzt.
+      </div>
+    </div>
+  </div>
+
+  <div style="overflow:auto;">
+    <div style="float:left;">
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="prevBtn"
+        onclick="nextPrev(-1)"
+      >Zurück</button>
+    </div>
+    <div style="float:right;">
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="nextBtn"
+        onclick="nextPrev(1)"
+      >Weiter</button></div>
+  </div>
+
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+
+</form>
+
+</div>

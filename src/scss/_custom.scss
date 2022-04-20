@@ -1,0 +1,28 @@
+// @import "./node_modules/bootstrap/scss/bootstrap";
+
+/* fonts */
+
+$font-family-sans-serif: Poppins,
+Arial,
+sans-serif;
+$btn-font-weight: 600;
+
+/* colors */
+
+$primary: #ffc700;
+$danger: #f44040;
+$min-contrast-ratio: 1; // keeps button text color white
+$theme-colors: ( "primary": $primary);
+
+/* input fields */
+
+$input-focus-border-color: $primary;
+// $input-focus-box-shadow: 0 0 0 0.25rem #ffc7002b;
+$input-focus-box-shadow: none;
+
+/* select fields*/
+
+$form-select-focus-border-color: $primary;
+$form-select-focus-box-shadow: none;
+
+$breadcrumb-divider: quote("|");
