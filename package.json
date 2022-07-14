@@ -1,5 +1,5 @@
 {
-    "name": "pkv_form",
+    "name": "ha_mc_boilerplate",
     "version": "1.0.0",
     "description": "",
     "private": true,
@@ -9,6 +9,9 @@
         "build": "webpack --mode=production --node-env=production"
     },
     "keywords": [],
+    "browser": {
+        "[module-name]": false
+    },
     "author": "",
     "license": "ISC",
     "devDependencies": {
@@ -31,7 +34,9 @@
         "webpack-dev-server": "^4.7.4"
     },
     "dependencies": {
+        "@popperjs/core": "^2.11.5",
         "bootstrap": "^5.1.3",
+        "jquery": "^3.6.0",
         "lodash": "^4.17.21"
     }
 }

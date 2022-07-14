@@ -1,1 +1,1 @@
-# bootstrap-boilerplate
+# Boilerplate for MC CloudPages

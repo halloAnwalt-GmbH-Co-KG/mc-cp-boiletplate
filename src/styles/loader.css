@@ -2,13 +2,13 @@
 #loading {
   width: 100%;
   display: block;
-  height: 75px;
+  /* height: 75px; */
 }
 
 .loader {
   position: relative;
   width: 80px;
-  margin: 100px auto;
+  margin: 100px auto 100px;
 }
 
 .duo {

@@ -1,0 +1,85 @@
+<div class="container-md d-flex justify-content-center align-items-center p-5">
+
+  <div class="row border shadow-sm p-3 mb-5 bg-body rounded-3">
+
+    <div class="col-12">
+
+      {{!-- LOADING --}}
+      {{!-- <div id="loading" class="w-100 d-block">
+        <div class="loader d-flex">
+          <div class="duo duo1">
+            <div class="dot dot-a"></div>
+            <div class="dot dot-b"></div>
+          </div>
+          <div class="duo duo2">
+            <div class="dot dot-a"></div>
+            <div class="dot dot-b"></div>
+          </div>
+        </div>
+
+        <div class="col-12 text-center">
+          <h1 class="fw-bold">Lädt...</h1>
+          <h3>Bitte haben Sie einen Moment Gedult.</h3>
+        </div>
+
+      </div> --}}
+
+
+      {{!-- SUCCESS --}}
+
+      %%[ IF @IsSuccess == 1 THEN ]%%
+
+      <div id="success" class="">
+        <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
+          <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+          <span class="swal2-success-line-tip"></span>
+          <span class="swal2-success-line-long"></span>
+          <div class="swal2-success-ring"></div>
+          <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+          <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+        </div>
+
+        <div class="col-12 text-center">
+          <h1 class="fw-bold">Well done!</h1>
+          <h3>%%=v(@DisplayMessage)=%%</h3>
+        </div>
+      </div>
+
+      {{!-- <div class="o-circle c-container__circle o-circle__sign--success">
+          <div class="o-circle__sign"></div>
+      </div> --}}
+
+      {{!-- FAILURE --}}
+
+      %%[ ELSEIF @IsSuccess == 0 THEN ]%%
+
+      <div id="failure" class="">
+        <div class="swal2-icon swal2-error swal2-animate-error-icon" style="display: flex;">
+          <span class="swal2-x-mark">
+            <span class="swal2-x-mark-line-left"></span>
+            <span class="swal2-x-mark-line-right"></span>
+          </span>
+        </div>
+
+        <div class="col-12 text-center">
+          <h1 class="fw-bold">Ups...</h1>
+          <h3>%%=v(@DisplayMessage)=%%</h3>
+        </div>
+      </div>
+
+      {{!-- <div class="o-circle c-container__circle o-circle__sign--failure">
+          <div class="o-circle__sign"></div>
+      </div> --}}
+
+    %%[ ENDIF ]%%
+
+    </div>
+
+    {{!-- <div class="col-12 text-center">
+      <h1 class="fw-bold">Well done!</h1>
+      <h3>Sie haben irgendwas richtig gemacht!</h3>
+    </div> --}}
+
+  </div>
+
+</div>

@@ -1,0 +1,20 @@
+<div class="container d-flex justify-content-center p-5">
+
+<div class="row align-items-start border border-light rounded-3 p-5 d-flex align-items-center">
+  {{!-- GREETINGS --}}
+  <div class="col-6">
+    <h3>Hallo USER!</h3>
+    <h3>Sie können sich hier von allen E-Mails abmelden.</h3>
+  </div>
+
+  {{!-- PREFERENCE OPTIONS --}}
+  <div class="col-6 d-flex align-items-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      <button id="submit" type="button" class="btn btn-primary btn-lg" href="%%=concat(@UnsubAllPage,'?qs=',@isolatedQS)=%%">Von allen E-Mails abmelden</button>
+    </div>
+
+  </div>
+</div>
+
+</div>

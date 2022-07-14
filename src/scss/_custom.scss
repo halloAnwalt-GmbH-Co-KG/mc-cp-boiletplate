@@ -2,15 +2,14 @@
 
 /* fonts */
 
-$font-family-sans-serif: Poppins,
-Arial,
-sans-serif;
+$font-family-sans-serif: Poppins, Arial, sans-serif;
 $btn-font-weight: 600;
 
 /* colors */
 
 $primary: #ffc700;
 $danger: #f44040;
+$dark-gray: #003249;
 $min-contrast-ratio: 1; // keeps button text color white
 $theme-colors: ( "primary": $primary);
 

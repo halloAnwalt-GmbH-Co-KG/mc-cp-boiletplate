@@ -1,0 +1,50 @@
+<div class="container d-flex justify-content-center p-5">
+
+<div class="row align-items-start border border-light rounded-3 p-5 d-flex align-items-center">
+  {{!-- GREETINGS --}}
+  <div class="col-6">
+    <h3>Hallo USER! Hier kannst du deine Preferenzen einstellen.</h3>
+  </div>
+
+  {{!-- PREFERENCE OPTIONS --}}
+  <div class="col-6">
+    <form id="prefForm" class="" action="">
+      <div class="">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="prefNewsletter" name="prefNewsletter">
+          <label class="form-check-label" for="prefNewsletter">Newsletter</label>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="prefUmfragen" name="prefUmfragen">
+          <label class="form-check-label" for="prefUmfragen">Umfragen</label>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="prefServiceBenachrichtigungen" name="prefServiceBenachrichtigungen">
+          <label class="form-check-label" for="prefServiceBenachrichtigungen">Service Benachrichtigungen</label>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="prefAll" value="allOn">
+          <label class="form-check-label" for="prefAll">Von allem abmelden</label>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button id="submit" type="button" class="btn btn-primary">Bestätigen</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+</div>
